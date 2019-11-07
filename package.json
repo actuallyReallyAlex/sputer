@@ -1,0 +1,27 @@
+{
+  "name": "sputer",
+  "version": "0.0.0",
+  "description": "A CLI game.",
+  "main": "index.js",
+  "bin": {
+    "sputer": "./index.js"
+  },
+  "scripts": {
+    "build": "rimraf lib && babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlee-dev/sputer.git"
+  },
+  "keywords": [
+    "game",
+    "cli",
+    "computer",
+    "hack"
+  ],
+  "author": "Alex Lee <www.alexlee.dev>",
+  "bugs": {
+    "url": "https://github.com/alexlee-dev/sputer/issues"
+  },
+  "homepage": "https://github.com/alexlee-dev/sputer#readme"
+}
