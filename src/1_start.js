@@ -1,9 +1,10 @@
 import inquirer from "inquirer";
 import clear from "clear";
 
-const start = () => {
-  clear();
-  return new Promise(resolve => {
+const start = () =>
+  new Promise(resolve => {
+    clear();
+
     inquirer
       .prompt([
         {
@@ -16,6 +17,5 @@ const start = () => {
         resolve(answers.name);
       });
   });
-};
 
 export default start;
