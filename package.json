@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/alexlee-dev/sputer#readme",
   "dependencies": {
+    "clear": "^0.1.0",
     "core-js": "^3.4.0",
+    "inquirer": "^7.0.0",
     "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
