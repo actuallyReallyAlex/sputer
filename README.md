@@ -1,0 +1,2 @@
+# sputer
+A CLI game.
