@@ -6,19 +6,18 @@ import greeting from "./2_greeting";
 import welcome from "./3_welcome.js";
 import home from "./4_home";
 
+import dir from "./commands/dir";
+import help from "./commands/help";
+
 const cli = async () => {
   const name = await start();
   await greeting(name);
   await welcome();
   const command = await home(name);
   const commands = {
-    help: () => {
-      console.log("-----");
-      console.log("OPTIONS");
-      console.log("Option 1");
-      console.log("Option 2");
-      console.log("Option 3");
-    }
+    dir,
+    help,
+    ls: dir
   };
   commands[command]();
 };
