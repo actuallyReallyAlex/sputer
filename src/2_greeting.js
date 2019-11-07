@@ -1,7 +1,7 @@
 import clear from "clear";
 
-const greeting = name => {
-  return new Promise(resolve => {
+const greeting = name =>
+  new Promise(resolve => {
     const message = `Hello, ${name} `;
     let times = 0;
 
@@ -12,15 +12,16 @@ const greeting = name => {
         2: "..."
       };
       if (times === 3) {
-        clearInterval(messageInterval);
+        setTimeout(() => {
+          clearInterval(messageInterval);
+          resolve();
+        }, 1000);
       } else {
         clear();
         console.log(message + dots[times]);
         times++;
       }
     }, 1000);
-    resolve();
   });
-};
 
 export default greeting;
