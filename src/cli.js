@@ -11,7 +11,16 @@ const cli = async () => {
   await greeting(name);
   await welcome();
   const command = await home(name);
-  console.log({ command });
+  const commands = {
+    help: () => {
+      console.log("-----");
+      console.log("OPTIONS");
+      console.log("Option 1");
+      console.log("Option 2");
+      console.log("Option 3");
+    }
+  };
+  commands[command]();
 };
 
 export default cli;
