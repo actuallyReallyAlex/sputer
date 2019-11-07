@@ -5,7 +5,7 @@ const welcome = () =>
   new Promise(resolve => {
     clear();
     console.log(`Welcome to ${chalk.redBright("sputer")}.`);
-    resolve();
+    setTimeout(() => resolve(), 3000);
   });
 
 export default welcome;
